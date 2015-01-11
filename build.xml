@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<project name="redirect-remover" default="createDistributionXPI">
+
+	<target name="createDistributionXPI">
+		<zip destfile="./${ant.project.name}.xpi" update="false">
+			<zipfileset dir="./defaults" includes="**" prefix="defaults" />
+			<zipfileset dir="./content" includes="**" prefix="content" />
+			<zipfileset dir="./locale" includes="**" prefix="locale" />
+			<zipfileset dir="./skin" includes="**" prefix="skin" />
+			<zipfileset dir="." includes="install.rdf" />
+			<zipfileset dir="." includes="chrome.manifest" />
+		</zip>
+		<delete file="${build_dir}/${ant.project.name}.jar"/>
+	</target>
+
+</project>
