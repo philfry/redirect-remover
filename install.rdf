@@ -5,7 +5,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>rdr@xeen</em:id>
     <em:name>Redirect Remover</em:name>
-    <em:version>2.6.4.1</em:version>
+    <em:version>2.6.4.2</em:version>
     <em:description>Removes Redirects from Links and Images</em:description>
     <em:creator>xeen</em:creator>
     <em:homepageURL>http://www.aredeye.com/addons/</em:homepageURL>
